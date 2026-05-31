@@ -14,6 +14,8 @@
 </head>
 <body>
 
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
   <!-- ==================== NAVIGATION ==================== -->
   <header>
     <nav id="navbar" aria-label="Main navigation">
@@ -61,14 +63,24 @@
       </div>
 
       <div class="hero-image">
-        <img
-          src="assets/images/profile.jpg"
-          alt="Trisha Rhaend C. Ramos"
-          width="600"
-          height="900"
-        />
+        <div class="hero-image-dot" aria-hidden="true"></div>
+        <div class="hero-image-line" aria-hidden="true"></div>
+        <div class="hero-image-frame">
+          <img
+            src="assets/images/profile.jpg"
+            alt="Trisha Rhaend C. Ramos"
+            width="1280"
+            height="960"
+          />
+        </div>
+        <div class="hero-image-badge" aria-hidden="true">
+          <span>BS Information Systems</span>
+          <strong>DNSC · 2026</strong>
+        </div>
       </div>
     </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
 
     <!-- ==================== ABOUT ==================== -->
     <section id="about" aria-labelledby="about-heading">
@@ -131,6 +143,8 @@
       </div>
     </section>
 
+    <div class="section-divider" aria-hidden="true"></div>
+
     <!-- ==================== EDUCATION ==================== -->
     <section id="education" aria-labelledby="education-heading">
       <div class="container">
@@ -176,6 +190,8 @@
         </div>
       </div>
     </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
 
     <!-- ==================== SKILLS ==================== -->
     <section id="skills" aria-labelledby="skills-heading">
@@ -281,6 +297,8 @@
       </div>
     </section>
 
+    <div class="section-divider" aria-hidden="true"></div>
+
     <!-- ==================== EXPERIENCE ==================== -->
     <section id="experience" aria-labelledby="experience-heading">
       <div class="container">
@@ -333,6 +351,8 @@
         </div>
       </div>
     </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
 
     <!-- ==================== PROJECTS ==================== -->
     <section id="projects" aria-labelledby="projects-heading">
@@ -396,6 +416,8 @@
         </div>
       </div>
     </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
 
     <!-- ==================== ACHIEVEMENTS ==================== -->
     <section id="achievements" aria-labelledby="achievements-heading">
@@ -475,6 +497,13 @@
                 <span>Municipality of Carmen</span>
               </div>
             </div>
+            <div class="achieve-item">
+              <img class="achieve-item-img" src="assets/images/cert_ojt.png" alt="OJT Certificate of Completion — Davao del Norte State College" loading="lazy" />
+              <div class="achieve-item-caption">
+                <strong>OJT Certificate of Completion</strong>
+                <span>Davao del Norte State College — Office of the College Registrar</span>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -513,6 +542,8 @@
 
       </div>
     </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
 
     <!-- ==================== RESUME ==================== -->
     <section id="resume" aria-labelledby="resume-heading">
@@ -565,6 +596,8 @@
         </div>
       </div>
     </section>
+    <div class="section-divider" aria-hidden="true"></div>
+
     <!-- ==================== CONTACT ==================== -->
     <section id="contact" aria-labelledby="contact-heading">
       <div class="container">
@@ -601,6 +634,11 @@
             <li class="contact-row">
               <span class="contact-row-label">Instagram</span>
               <span class="contact-row-value"><a href="https://www.instagram.com/iisshheenngg" target="_blank" rel="noopener noreferrer">@iisshheenngg</a></span>
+              <span class="contact-row-arrow">→</span>
+            </li>
+            <li class="contact-row">
+              <span class="contact-row-label">GitHub</span>
+              <span class="contact-row-value"><a href="https://github.com/isheeeeeng-prog" target="_blank" rel="noopener noreferrer">isheeeeeng-prog</a></span>
               <span class="contact-row-arrow">→</span>
             </li>
           </ul>

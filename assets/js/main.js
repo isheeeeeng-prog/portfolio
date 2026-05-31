@@ -353,7 +353,27 @@ document.addEventListener('keydown', e => {
   if (e.key === 'ArrowRight') navigate(1);
 });
 
-/* ── Swipe gestures for lightbox (mobile) ── */
+
+/* ── 9. CURSOR GLOW ── */
+const cursorGlow = document.getElementById('cursorGlow');
+if (cursorGlow && window.matchMedia('(pointer: fine)').matches) {
+  document.addEventListener('mousemove', e => {
+    cursorGlow.style.left = e.clientX + 'px';
+    cursorGlow.style.top  = e.clientY + 'px';
+  }, { passive: true });
+} else if (cursorGlow) {
+  cursorGlow.style.display = 'none';
+}
+
+/* ── 10. HERO IMAGE PARALLAX ── */
+const heroImg = document.querySelector('.hero-image-frame');
+if (heroImg && window.matchMedia('(pointer: fine)').matches) {
+  document.addEventListener('mousemove', e => {
+    const x = (e.clientX / window.innerWidth  - 0.5) * 10;
+    const y = (e.clientY / window.innerHeight - 0.5) * 6;
+    heroImg.style.transform = `translate(${x}px, ${y}px)`;
+  }, { passive: true });
+}
 let touchStartX = 0;
 let touchStartY = 0;
 
