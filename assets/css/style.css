@@ -428,11 +428,10 @@ header {
   max-height: 680px;
   border-radius: 2px;
   overflow: hidden;
-  background: #1a1035;
   box-shadow:
-    0 0 0 1px rgba(201,168,76,0.22),
-    0 32px 80px rgba(0,0,0,0.7),
-    0 0 80px rgba(124,92,191,0.2);
+    0 0 0 1px rgba(201,168,76,0.18),
+    0 32px 80px rgba(0,0,0,0.6),
+    0 0 60px rgba(124,92,191,0.12);
 }
 
 .hero-image-frame img {
@@ -1897,19 +1896,18 @@ section + section::before {
 
   /* ── Hero ── */
   .hero-image {
-    width: 92vw;
-    height: auto;
+    width: 80vw;
+    height: 107vw;
     min-height: unset;
     max-height: unset;
     margin: 0 auto;
-    padding: 20px 12px 36px;
+    padding: 24px 16px 40px;
   }
 
   .hero-image-frame {
     max-height: none;
-    height: auto;
+    height: 100%;
     overflow: hidden;
-    aspect-ratio: 4 / 5;
   }
 
   .hero-image-frame img {
@@ -1920,18 +1918,18 @@ section + section::before {
   }
 
   .hero-image-badge {
-    bottom: 36px;
-    left: 12px;
+    bottom: 40px;
+    left: 16px;
     padding: 8px 14px;
   }
 
   .hero-image-badge span  { font-size: 0.55rem; }
   .hero-image-badge strong { font-size: 0.82rem; }
 
-  .hero-image::before { top: 20px; left: 12px; width: 36px; height: 36px; }
-  .hero-image::after  { bottom: 36px; right: 12px; width: 36px; height: 36px; }
+  .hero-image::before { top: 24px; left: 16px; width: 36px; height: 36px; }
+  .hero-image::after  { bottom: 40px; right: 16px; width: 36px; height: 36px; }
 
-  .hero-image-dot  { top: 18px; right: 12px; width: 6px; height: 6px; }
+  .hero-image-dot  { top: 20px; right: 14px; width: 6px; height: 6px; }
   .hero-image-line { display: none; }
 
   .hero-content {
