@@ -1246,6 +1246,12 @@ header {
 }
 
 /* Seminar featured card */
+.seminar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
 .seminar-featured {
   display: grid;
   grid-template-columns: 1fr 1fr;
