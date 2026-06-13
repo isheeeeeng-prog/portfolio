@@ -1297,6 +1297,28 @@ header {
   pointer-events: none;
 }
 
+.seminar-featured--green {
+  background: linear-gradient(135deg, rgba(120,190,120,0.10) 0%, #1a3320 60%);
+}
+
+.seminar-featured--green .seminar-info {
+  background: #1a3320;
+}
+
+.seminar-featured--green:hover {
+  border-color: rgba(120,190,120,0.35);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.4), 0 0 0 1px rgba(120,190,120,0.08);
+}
+
+.seminar-featured--green .seminar-img-overlay {
+  background: linear-gradient(to right, transparent 70%, #1a3320 100%);
+}
+
+.seminar-featured--green .seminar-tag {
+  color: #9fd9a0;
+  border-color: rgba(120,190,120,0.4);
+}
+
 .seminar-info {
   padding: 44px 40px;
   display: flex;
