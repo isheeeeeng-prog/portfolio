@@ -299,9 +299,11 @@ window.addEventListener('load', () => {
     registerImage(img, captionEl ? captionEl.textContent : img.alt);
   });
 
-  // Seminar image
-  const seminarImg = document.querySelector('.seminar-img');
-  if (seminarImg) registerImage(seminarImg, '36th Civil Registration Month 2026 — DNSC');
+  // Seminar images
+  document.querySelectorAll('.seminar-img').forEach(img => {
+    const titleEl = img.closest('.seminar-featured')?.querySelector('.seminar-title');
+    registerImage(img, titleEl ? titleEl.textContent : img.alt);
+  });
 
   // Resume
   const resumeImg = document.querySelector('.resume-frame img');
